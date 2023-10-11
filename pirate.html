@@ -21,6 +21,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align:center;
         }
 
         .instructions {
@@ -64,123 +65,196 @@
     <div class="instructions">Click on the locations to search for treasure, beware the traps</div>
     <div id="locations">Number of locations checked is zero.</div>
     <div id="penalty">Penalty is zero.</div>
-    <div class="ram">Click for help.</div>
+    <div class="ram" onclick="help()">Click for help.</div>
     <div id="help">Help report</div> <br>
     <div class="container">
         <div class="game_field">
             <div class="row">
                 <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i1" onclick="check(0)">
                 </div>
                 <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i2" onclick="check(1)">
                 </div>
                 <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i3" onclick="check(2)">
                 </div>
                 <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i4" onclick="check(3)">
                 </div>
                 <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
-                </div>
-                <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
-                </div>
-                <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
-                </div>
-                <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
-                </div>
-                <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i5" onclick="check(4)">
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i6" onclick="check(5)">
                 </div>
                 <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i7" onclick="check(6)">
                 </div>
                 <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i8" onclick="check(7)">
                 </div>
                 <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i9" onclick="check(8)">
                 </div>
                 <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
-                </div>
-                <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
-                </div>
-                <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
-                </div>
-                <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
-                </div>
-                <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i10" onclick="check(9)">
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i11" onclick="check(10)">
                 </div>
                 <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i12" onclick="check(11)">
                 </div>
                 <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i13" onclick="check(12)">
                 </div>
                 <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i14" onclick="check(13)">
                 </div>
                 <div class="col-sm-1">
-                    <img src="./hiddenTreasure.jpeg" alt="Treasure image"
-                        style="height: 100%; width: 100%;padding-bottom: 5%;">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i15" onclick="check(14)">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i16" onclick="check(15)">
+                </div>
+                <div class="col-sm-1">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i17" onclick="check(16)">
+                </div>
+                <div class="col-sm-1">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i18" onclick="check(17)">
+                </div>
+                <div class="col-sm-1">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i19" onclick="check(18)">
+                </div>
+                <div class="col-sm-1">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i20" onclick="check(19)">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i21" onclick="check(20)">
+                </div>
+                <div class="col-sm-1">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i22" onclick="check(21)">
+                </div>
+                <div class="col-sm-1">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i23" onclick="check(22)">
+                </div>
+                <div class="col-sm-1">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i24" onclick="check(23)">
+                </div>
+                <div class="col-sm-1">
+                    <img src="./hiddenTreasure.jpg" alt="Location of Treasure"
+                        style="height: 120%; width: 100%;padding-bottom: 25%;" id="i25" onclick="check(24)">
                 </div>
             </div>
         </div>
 
     </div>
+    <script>
+        const imgArr = ["i1", "i2", "i3", "i4", "i5", "i6", "i7", "i8", "i9", "i10", "i11", "i12", "i13", "i14", "i15", "i16", "i17", "i18", "i19", "i20", "i21", "i22", "i23", "i24","i25"]
+        let checkCount = 0
+        let penalty = 0
+        let lastCheck = 0
+        let treasureLocation =5
+        let trapLocation = 18
+        let gameOver = false
+
+        function check(position){
+            if(!gameOver){
+                let idPosition = document.getElementById(imgArr[position])
+               console.log(idPosition)
+              
+               if(position == treasureLocation){
+                idPosition.src = "./treasure.jpeg"
+                    gameOver = true
+                    penalty = penalty-3
+                    
+               }else if(position==trapLocation){
+                idPosition.src = "./treasure_trap.jpeg"
+                    gameOver = true
+                    penalty = penalty+4
+               }else{
+                idPosition.src = "./pirateHat.jpeg"
+                    penalty = penalty+1
+               }
+               
+               checkCount++
+               document.getElementById("locations").innerHTML = "Number of locations checked is " + checkCount + ".";
+               document.getElementById("penalty").innerHTML = "penalty is " +penalty+".";
+               lastCheck = position
+
+               
+
+            }
+        }
+
+        function help() {
+            let lastRow = parseInt((lastCheck / 5), 10);
+            let treasureRow = parseInt((treasureLocation / 5), 10);
+            let result = " ";
+            let lastCol = lastCheck % 5;
+            let treasureCol = treasureLocation % 5;
+            let rowDifference = 0;
+            let colDifference = 0;
+            if (treasureRow > lastRow) {
+                rowDifference = treasureRow - lastRow;
+            }
+            else {
+                rowDifference = lastRow - treasureRow;
+            }
+            if (treasureCol > lastCol) {
+                colDifference = treasureCol - lastCol;
+            }
+            else {
+                colDifference = lastCol - treasureCol;
+            }
+            if (lastRow - treasureRow == 1 || lastRow - treasureRow == 1 || lastCol - treasureCol == 1 || lastCol - treasureCol == -1) {
+                result = "Can smell it";
+            }
+            else if (rowDifference + colDifference == 2) {
+                result = "Close Matie";
+            }
+            else {
+                result = "Step Faster";
+            }
+            penalty = penalty + 2;
+            document.getElementById("penalty").innerHTML = "Penalty is " + penalty + ".";
+            document.getElementById("help").innerHTML = result;
+        }
+
+    </script>
 </body>
 
 </html>
