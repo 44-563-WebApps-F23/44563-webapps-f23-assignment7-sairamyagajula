@@ -215,37 +215,37 @@
             }
         }
         function help() {
-            let lastRow = parseInt((lastCheck / 5), 10);
-            let treasureRow = parseInt((treasureLocation / 5), 10);
-            let result = " ";
-            let lastCol = lastCheck % 5;
-            let treasureCol = treasureLocation % 5;
-            let rowDifference = 0;
-            let colDifference = 0;
-            if (treasureRow > lastRow) {
-                rowDifference = treasureRow - lastRow;
+            let last_R = parseInt((lastCheck / 5), 10);
+            let treasure_R = parseInt((treasureLocation / 5), 10);
+            let res = " ";
+            let last_C = lastCheck % 5;
+            let treasure_C = treasureLocation % 5;
+            let rowDiff = 0;
+            let colDiff = 0;
+            if (treasure_R > last_R) {
+                rowDiff = treasure_R - last_R;
             }
             else {
-                rowDifference = lastRow - treasureRow;
+                rowDiff = last_R - treasure_R;
             }
-            if (treasureCol > lastCol) {
-                colDifference = treasureCol - lastCol;
-            }
-            else {
-                colDifference = lastCol - treasureCol;
-            }
-            if (lastRow - treasureRow == 1 || lastRow - treasureRow == 1 || lastCol - treasureCol == 1 || lastCol - treasureCol == -1) {
-                result = "Can smell it";
-            }
-            else if (rowDifference + colDifference == 2) {
-                result = "Close Matie";
+            if (treasure_C > last_C) {
+                colDiff = treasure_C - last_C;
             }
             else {
-                result = "Step Faster";
+                colDiff = last_C - treasure_C;
+            }
+            if (last_R - treasure_R == 1 || last_R - treasure_R == 1 || last_C - treasure_C == 1 || last_C - treasure_C == -1) {
+                res = "Can smell it";
+            }
+            else if (rowDiff + colDiff == 2) {
+                res = "Close Matie";
+            }
+            else {
+                res = "Step Faster";
             }
             penalty = penalty + 2;
             document.getElementById("penalty").innerHTML = "Penalty is " + penalty + ".";
-            document.getElementById("help").innerHTML = result;
+            document.getElementById("help").innerHTML = res;
         }
 
     </script>
