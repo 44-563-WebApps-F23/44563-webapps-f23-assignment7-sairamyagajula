@@ -190,7 +190,6 @@
         let treasureLocation =5
         let trapLocation = 18
         let gameOver = false
-
         function check(position){
             if(!gameOver){
                 let idPosition = document.getElementById(imgArr[position])
@@ -208,18 +207,13 @@
                }else{
                 idPosition.src = "./pirateHat.jpeg"
                     penalty = penalty+1
-               }
-               
+               }               
                checkCount++
                document.getElementById("locations").innerHTML = "Number of locations checked is " + checkCount + ".";
                document.getElementById("penalty").innerHTML = "penalty is " +penalty+".";
                lastCheck = position
-
-               
-
             }
         }
-
         function help() {
             let lastRow = parseInt((lastCheck / 5), 10);
             let treasureRow = parseInt((treasureLocation / 5), 10);
