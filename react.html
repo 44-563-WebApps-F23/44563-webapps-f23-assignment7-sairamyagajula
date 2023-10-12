@@ -9,7 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <style>
-    .btnclr {
+    .btn_color {
       color:darkmagenta;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
@@ -35,8 +35,8 @@
     <div id="counter">Count</div>
 
 <br> 
-  <input id ="start-button" class="btnclr" type="button" value="Start Timer">
-  <input id="react-button" class="btnclr" type ="button" value="React">
+  <input id ="start-button" class="btn_color" type="button" value="Start Timer">
+  <input id="react-button" class="btn_color" type ="button" value="React">
   
   <script> 
   var reactTime = undefined;
@@ -47,33 +47,33 @@ function recordTime()
     console.log("React time recorded:", reactTime);
 }
 document.getElementById("react-button").onclick = recordTime;
-function startTime() {
+// function startTime() {
   
-    for (var i = 0; i < 9; i++) {
-     var count = Math.floor(Math.random()*9)+2
-        setTimeout(function (count) {
-            return function () {
-                document.getElementById("counter").innerHTML = count;
-            };
-        }(i), (8 - i) * 1000);
-    }
+//     for (var i = 0; i < 9; i++) {
+//      var count = Math.floor(Math.random()*9)+2
+//         setTimeout(function (count) {
+//             return function () {
+//                 document.getElementById("counter").innerHTML = count;
+//             };
+//         }(i), (8 - i) * 1000);
+//     }
 
-    setTimeout(function () {
+//     setTimeout(function () {
       
-        if (typeof reactTime === "undefined") {
+//         if (typeof reactTime === "undefined") {
         
-            document.getElementById("target").innerHTML = "Too Slow";
-        } else {
-            var endTime = Date.now();
-            var elapsedTime = endTime - reactTime;
+//             document.getElementById("target").innerHTML = "Too Slow";
+//         } else {
+//             var endTime = Date.now();
+//             var elapsedTime = endTime - reactTime;
 
-            document.getElementById("target").innerHTML = "Time was " + elapsedTime + "ms";
-        }
-    }, 8000);
-}
-document.getElementById("start-button").onclick = startTime;
+//             document.getElementById("target").innerHTML = "Time was " + elapsedTime + "ms";
+//         }
+//     }, 8000);
+// }
+// document.getElementById("start-button").onclick = startTime;
 
 
-  </script>
+//   </script>
 </body>
 </html>
