@@ -5,11 +5,11 @@
  <style>
      .flex-container {
       display: flex;  flex-direction:row;
-      background-color: orange;
+      background-color: rgb(122, 240, 106);
   }
 
 .flex-container > div {  /*div children of the flex container*/
-  background-color: lightcyan; 
+  background-color: rgb(71, 179, 179); 
   margin: 10px;  padding: 20px;  font-size: 30px;
 }
 
@@ -17,21 +17,20 @@
 @media (max-width: 600px) { 
 	 .flex-container{
 		 flex-direction:column;
-		 background-color: green;
+		 background-color: rgb(105, 205, 232);
 	  }
 	}
 	body {
       margin-left: 15px;
-	  background-color:azure;
+	  background-color:rgb(234, 227, 95);
     }
 	h1 {
-        text-shadow: 2px 2px 8px blue;
-        text-decoration: underline;
+        text-shadow: 2px 2px 8px rgb(113, 4, 80);
     }
 	p {
 		font-family:Arial, Helvetica, sans-serif;
 	}
-	.button {
+	.bu {
   transition-duration: 0.4s;
   height: 28px;
   width:80px;
@@ -39,12 +38,12 @@
   box-shadow: 0 15px 25px 0 rgba(0,0,0,0.2), 0 15px 30px 0 rgba(0,0,0,0.19);
 }
 
-.button:hover {
+.bu:hover {
   background-color: #4CAF50; 
   color: white;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-.button1 {
+.bu1 {
   transition-duration: 0.4s;
   height: 28px;
   width:80px;
@@ -52,12 +51,25 @@
   box-shadow: 0 15px 25px 0 rgba(0,0,0,0.2), 0 15px 30px 0 rgba(0,0,0,0.19);
 }
 
-.button1:hover {
-  background-color: blue;
+.bu1:hover {
+  background-color: rgb(230, 110, 190);
+  color: rgb(237, 200, 200);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.bu2 {
+  transition-duration: 0.4s;
+  height: 28px;
+  width:80px;
+  font-family:cursive;
+  box-shadow: 0 15px 25px 0 rgba(0,0,0,0.2), 0 15px 30px 0 rgba(0,0,0,0.19);
+}
+
+.bu2:hover {
+  background-color: rgb(123, 157, 231);
   color: white;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-.button2 {
+.bu3 {
   transition-duration: 0.4s;
   height: 28px;
   width:80px;
@@ -65,26 +77,13 @@
   box-shadow: 0 15px 25px 0 rgba(0,0,0,0.2), 0 15px 30px 0 rgba(0,0,0,0.19);
 }
 
-.button2:hover {
-  background-color: red;
-  color: white;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-.button3 {
-  transition-duration: 0.4s;
-  height: 28px;
-  width:80px;
-  font-family:cursive;
-  box-shadow: 0 15px 25px 0 rgba(0,0,0,0.2), 0 15px 30px 0 rgba(0,0,0,0.19);
-}
-
-.button3:hover {
+.bu3:hover {
   background-color: yellowgreen;
   color: white;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .border{
-    border-radius: 50px 20px;  
+    border-radius: 20px 20px;  
      }
 </style>
     </head>
@@ -100,10 +99,10 @@
 
 <p> Press the button to create an new element of type div and then add it to the container.
 	</p>
-	<input type ="button" class="button" id ="addEndButton"  value ="Add end">
-	<input type ="button" class="button1" id ="addFrontButton"  value ="Add Front">
-	<input type ="button" class="button2" id ="removeButton"  value ="Remove">
-	<input type ="button" class="button3" id ="swap"  value ="swap" onclick="swap()">
+	<input type ="button" class="bu" id ="addEndButton"  value ="Add end">
+	<input type ="button" class="bu1" id ="addFrontButton"  value ="Add Front">
+	<input type ="button" class="bu2" id ="removeButton"  value ="Remove">
+	<input type ="button" class="bu3" id ="swap"  value ="swap" onclick="swap()">
 
 </body>
 <script>
